@@ -1,0 +1,57 @@
+version: "3.9"
+services:
+  rabbitmq:
+    image: haribojsp/rabbitmq:module
+    container_name: rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+      - "15671:15671"
+      - "5671:5671"
+      - "4369:4369"
+
+  user-service:
+    image: haribojsp/user-service-pm:1.0
+    container_name: user-service
+    ports:
+      - "50001:50001"
+    environment:
+      SPRING_CLOUD_CONFIG_URI: http://13.125.126.130:8888
+      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
+      EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
+   
+
+  hr-service:
+    image: haribojsp/hr-service-pm:1.0
+    container_name: hr-service
+    ports:
+      - "50002:50002"
+    environment:
+      SPRING_CLOUD_CONFIG_URI: http://13.125.126.130:8888
+      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
+      EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
+   
+
+  job-service:
+    image: haribojsp/job-service-pm:1.0
+    container_name: job-service
+    ports:
+      - "50004:50004"
+    environment:
+      SPRING_CLOUD_CONFIG_URI: http://13.125.126.130:8888
+      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
+      EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
+   
+  process-service:
+    image: haribojsp/process-service-pm:1.0
+    container_name: process-service
+    ports:
+      - "50005:50005" 
+    environment:
+      SPRING_CLOUD_CONFIG_URI: http://13.125.126.130:8888
+      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
+      EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
+    
+
+
+  
