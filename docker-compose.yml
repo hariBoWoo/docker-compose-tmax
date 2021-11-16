@@ -9,6 +9,9 @@ services:
       - "15671:15671"
       - "5671:5671"
       - "4369:4369"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
 
   user-service:
     image: haribojsp/user-service-pm:1.0
