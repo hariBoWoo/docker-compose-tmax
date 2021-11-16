@@ -19,7 +19,7 @@ services:
     ports:
       - "50001:50001"
     environment:
-      SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
+      # SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
       EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
       EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
    
@@ -30,7 +30,7 @@ services:
     ports:
       - "50002:50002"
     environment:
-      SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
+      # SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
       EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
       EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
    
@@ -41,7 +41,7 @@ services:
     ports:
       - "50004:50004"
     environment:
-      SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
+      # SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
       EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
       EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
    
@@ -51,7 +51,7 @@ services:
     ports:
       - "50005:50005" 
     environment:
-      SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
+      # SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
       EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
       EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
     
