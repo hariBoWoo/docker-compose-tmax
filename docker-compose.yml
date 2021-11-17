@@ -22,7 +22,7 @@ services:
       - rabbitmq  
     environment:
       # SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
-      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
+      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.37.133.220:8761/eureka
       EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
    
 
@@ -35,7 +35,7 @@ services:
       - user-service
     environment:
       # SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
-      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
+      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.37.133.220:8761/eureka
       EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
    
 
@@ -48,7 +48,7 @@ services:
       - hr-service
     environment:
       # SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
-      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
+      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.37.133.220:8761/eureka
       EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
    
   process-service:
@@ -60,7 +60,7 @@ services:
       - job-service
     environment:
       # SPRING_CLOUD_CONFIG_URI: http://52.78.2.93:8888
-      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.34.96.114:8761/eureka
+      EUREKA_CLIENT_SERVICE-URL_DEFAULT-ZONE: http://3.37.133.220:8761/eureka
       EUREKA_INSTANCE_HOSTNAME: 3.38.100.122
     
 
